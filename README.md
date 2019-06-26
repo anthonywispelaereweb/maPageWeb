@@ -27,9 +27,9 @@ Une fois le dossier clonné :
 
 ```sh
 
-$ git clone https://gitlab.com/anthonyWisp/repoOpenClassRoom.git
+$ git clone https://gitlab.com/anthonyWisp/taskRunner.git
 
-$ cd repoOpenClassRoom
+$ cd taskRunner
 
 ```
 
