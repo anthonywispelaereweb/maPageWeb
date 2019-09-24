@@ -15,11 +15,11 @@ Bienvenu, quelques explications :
 
 - plusieurs fichiers et un dossier principal
 
-> fichié .gitignore : il sert à dire a votre système de repositorie (gitlab, github,...) d'ingnorer les fichiers ou dossiers cités.
+> fichier .gitignore : il sert à dire a votre système de repositorie (gitlab, github,...) d'ingnorer les fichiers ou dossiers cités.
 
-> fichié gulpfile.js : il servira à configurer l'exécution des tâches répétitives.
+> fichier gulpfile.js : il servira à configurer l'exécution des tâches répétitives.
 
-> fichié package.json ; il servira à installer l'ensemble du projet dans son environnement
+> fichier package.json ; il servira à installer l'ensemble du projet dans son environnement
   
 ### Installation
 
