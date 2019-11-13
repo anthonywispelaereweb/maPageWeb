@@ -20,7 +20,7 @@ gulp.task('connect', function() {
 });
 
 gulp.task('open', function() {
-    gulp.src('dist/' + CONSTANTS.INDEX_FILE)
+    gulp.src('./dist/' + CONSTANTS.INDEX_FILE)
         .pipe(open({uri: 'http://localhost:' + CONSTANTS.PORT_NUMBER + '/' + CONSTANTS.INDEX_FILE}))
         .pipe(connect.reload());
 })
@@ -59,11 +59,11 @@ gulp.task('sass', function () {
         browsers: ['last 3 versions'],
         cascade: false
     }))
-    .pipe(gulp.dest('dist/css'))
+    .pipe(gulp.dest('./dist/css'))
     .pipe(connect.reload());
 });
 
 
 
 
-gulp.task('default', ['html', 'copyData','js','sass','watch','connect', 'open']);
+gulp.task('default', ['html', 'copyData','js','sass','watch', 'open','connect']);
