@@ -1,12 +1,12 @@
 'use strict';
  
 var gulp = require('gulp'),
- sass = require('gulp-sass'),
- connect = require('gulp-connect'),
- autoprefixer = require('gulp-autoprefixer'),
- open = require('gulp-open');
+  sass = require('gulp-sass'),
+  connect = require('gulp-connect'),
+  autoprefixer = require('gulp-autoprefixer'),
+  open = require('gulp-open');
 
- var CONSTANTS = {
+var CONSTANTS = {
     PORT_NUMBER: 8888,
     INDEX_FILE: 'index.html',
  }
