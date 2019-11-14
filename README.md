@@ -45,6 +45,12 @@ Puis utiliser :
 
 ```sh
 
+$ gulp build
+
+```
+
+```sh
+
 $ gulp
 
 ```
