@@ -3,7 +3,7 @@
 
 ### Par Wispelaere Anthony Développeur Front-end
 
-[![N|Moi](https://image.noelshack.com/fichiers/2018/32/5/1533906178-bitmoji-20180810030135.png)](https://wispelaere.fr/)
+[![N|Moi](http://image.noelshack.com/fichiers/2020/06/3/1580935925-photopresentation1.png)](https://wispelaere.fr/)
 
 ## Pré-requis pour l'utilisation du task runner
 
@@ -42,6 +42,14 @@ $ npm install
 ```
 
 Puis utiliser :
+
+
+```sh
+
+$ gulp build
+
+```
+
 
 ```sh
 

@@ -19,22 +19,23 @@ var global = {
         },
         initializeProducts: function() {
             console.log('1 - J\'appel le service pour trouver un resultat');
-            services.getData("./assets/json/products.json").then(function(data) {
+            services.getData("./assets/json/products.json")
+            .then((data) => {
                 console.log('4 - Le service me renvoi le resultat trouve');
                 console.log('data:', data);
                 global.data.products = data;
+                console.log('global.data.products ', global.data.products )
                 
                 for( var i = 0; i < global.data.products.length ; i++) {
-                    $("#productsCtn")
-                        .append("<div class=\"product-ctn\" id=" + "product"+ global.data.products[i].id +"></div>")
-                    $("#product" + global.data.products[i].id)
-                        .append("<p class=\"product-label\">" + global.data.products[i].label +"</p>")
-                        .append("<img class=\"product-img\" src=\"" + global.data.products[i].urlImg  + "\" alt=\"\">")
-                        .append("<p class=\"product-price\">" + global.data.products[i].price +"</p>");
+                    let templateHtml = 
+                        `<div class=\"product-ctn\" id="product-${global.data.products[i].id}">
+                            <p class="product-label">Titre : ${global.data.products[i].label}</p>
+                            <img class="product-img" src="${global.data.products[i].urlImg}" alt=" ">
+                            <p class="product-price">${global.data.products[i].price}</p>
+                        </div>`
+                    $("#productsCtn").append(templateHtml)
                 }
             });
-            
-            
         }
     }
 }
