@@ -22,5 +22,11 @@
         "label": "Un autre clavier",
         "price": 4,
         "urlImg": "./assets/img/otherTest.png"
+    },
+    {
+        "id": 5,
+        "label": "test",
+        "price": 8,
+        "urlImg": "./assets/img/otherTest.png"
     }
 ]

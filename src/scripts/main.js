@@ -21,6 +21,7 @@ var global = {
             console.log('1 - J\'appel le service pour trouver un resultat');
             services.getData("./assets/json/products.json").then(function(data) {
                 console.log('4 - Le service me renvoi le resultat trouve');
+                console.log('data:', data);
                 global.data.products = data;
                 
                 for( var i = 0; i < global.data.products.length ; i++) {
