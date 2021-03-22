@@ -1,0 +1,1 @@
+var services={getData:e=>(console.log("2 - Le service à ete demandé"),new Promise((function(o,r){$.get(e,(function(e){return e?(console.log("3 - Le service a trouve un résultat"),o(e)):(console.log("3 - Le service n'a pas trouve un resultat"),r(err))}))})))};
